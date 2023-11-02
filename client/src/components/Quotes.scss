@@ -1,0 +1,14 @@
+@import "../css-config/mixins.scss";
+
+
+#quote-box {
+    background: #fff;
+    width: 20rem;
+    margin: 10rem auto;
+    padding: 3rem;
+    border-radius: 5px;
+
+    @include md{
+        width: 40rem;
+    }
+}
