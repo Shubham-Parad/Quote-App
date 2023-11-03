@@ -2,13 +2,57 @@
 
 
 #quote-box {
-    background: #fff;
+    background: #f7efd6;
     width: 20rem;
     margin: 10rem auto;
     padding: 3rem;
-    border-radius: 5px;
+    border-radius: 7px;
 
     @include md{
         width: 40rem;
+        margin: 13rem auto;  
+    }
+
+    #text{
+        // font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        color: #274d83;
+        font-weight: 900;
+        @include md{
+            font-size: 1.3rem;
+        }
+    }
+
+    #authors{
+        display: flex;
+        justify-content: flex-end;
+        color: #274d83;
+        font-weight:200;
+
+        @include md{
+            font-size: 1.2rem;
+        }
+    }
+
+    #buttons{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    #new-quote{
+        background: #14305f;
+        color: #fff;
+        padding: .7rem 1rem;
+        margin-top: 1rem;
+        font-weight: bold;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.8;
+        }
     }
 }
