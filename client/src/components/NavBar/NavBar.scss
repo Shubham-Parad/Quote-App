@@ -1,0 +1,41 @@
+@import '../../css-config/mixins.scss';
+
+
+.input-wrapper {
+    background-color: #f7efd6;
+    width: 100%;
+    background-repeat: 10px;
+    height: 2.5rem;
+    padding: 0 15px;
+    box-shadow: 0 0 8px #ddd;
+    display: flex;
+    align-items: center;
+
+    @include md{
+        height: 3.5rem;
+        padding: 0 25px;
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        height: 100%;
+        font-size: 1.25rem;
+        width: 100%;
+        margin-left: 5px;
+
+        @include md{
+            font-size: 1.5rem;
+            margin-left: 8px;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    #search-icon{
+        color: #14305f;
+    }
+
+}

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Quotes.scss';
+import { NavBar } from './NavBar/NavBar';
 
 function Quotes() {
 
@@ -34,15 +35,18 @@ function Quotes() {
     }
 
     return (
-        <div id='quote-box'>
-            <div id="text">
-                <p>{quote}</p>
-            </div>
-            <div id="authors">
-                <p>{ author }</p>
-            </div>
-            <div id="buttons">
-                <button onClick={handleClick} id="new-quote">New Quote</button>
+        <div id="main-container">
+            <NavBar />
+            <div id='quote-box'>
+                <div id="text">
+                    <p>{quote}</p>
+                </div>
+                <div id="authors">
+                    <p>{author}</p>
+                </div>
+                <div id="buttons">
+                    <button onClick={handleClick} id="new-quote">New Quote</button>
+                </div>
             </div>
         </div>
     )
