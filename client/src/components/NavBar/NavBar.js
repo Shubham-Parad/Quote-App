@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import './NavBar.scss';
 
-export const NavBar = () => {
+export const NavBar = ({setResults}) => {
 
     const [input, setInput] = useState("");
 
@@ -19,7 +19,7 @@ export const NavBar = () => {
                             quote.author.toLowerCase().includes(value)
                         );
                     });
-                    console.log(results);
+                    setResults(results);
                 } else {
                     console.log("No quotes data found in the JSON.");
                 }
